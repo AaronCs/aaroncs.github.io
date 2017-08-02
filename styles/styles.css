@@ -78,7 +78,7 @@ a {
   border-top: 1px #ffc300 solid;
   padding: 2em; }
   .content__projects-item:hover {
-    background-color: #f2b900; }
+    border-color: #e6b000; }
 
 .highlight {
   color: #ffc300;

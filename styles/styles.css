@@ -1,7 +1,8 @@
 nav {
   align-items: center;
-  background-color: #fff;
+  background-color: #f2dfd7;
   display: flex;
+  grid-column: span 3;
   grid-row-start: 1;
   justify-content: center; }
 
@@ -17,24 +18,26 @@ nav {
   margin: 0; }
 
 a {
-  color: #555;
+  color: #444;
   text-decoration: none; }
   a:hover {
     cursor: pointer; }
 
 .nav-item {
-  border-bottom: 1px #fff solid;
+  border-bottom: 1px #f2dfd7 solid;
   display: inline-block;
+  font-size: 1.2em;
   margin: auto 20px;
   padding: 10px; }
   .nav-item:hover {
-    border-bottom: 1px #898787 solid; }
+    border-bottom: 1px #ff4b3e solid; }
 
 .nav-item--active {
-  border-bottom: 1px #cbcbcb solid; }
+  border-bottom: 1px #ff4b3e solid; }
 
 .content {
-  color: #555;
+  color: #444;
+  grid-column: span 3;
   grid-row-start: 2; }
 
 .content__grid {
@@ -44,9 +47,9 @@ a {
 
 .content__hero {
   align-items: center;
-  border-bottom: 1px #cbcbcb solid;
-  border-top: 1px #cbcbcb solid;
-  color: #555;
+  background-color: #73bfb8;
+  border-radius: 8px;
+  color: #444;
   display: flex;
   flex-direction: column;
   grid-column-start: 2;
@@ -54,32 +57,39 @@ a {
   height: 25em;
   justify-content: center; }
   .content__hero h1 {
-    font-size: 3em;
+    font-size: 4em;
     margin: 0; }
   .content__hero p {
+    font-size: 2em;
     margin: 0; }
 
 .content__projects {
-  background-color: #fff;
+  border-radius: 8px;
   grid-column-start: 2;
   grid-row-start: 2; }
   .content__projects h1 {
-    margin-top: 1em; }
+    margin: 1em 0 1em 1em; }
 
 .content__projects-container {
   display: flex;
   justify-content: space-around; }
 
 .content__projects-item {
-  background-color: #e8dcdc;
+  background-color: #ffc300;
+  border-radius: 10px;
   padding: 2em; }
   .content__projects-item:hover {
-    background-color: #dfcece; }
+    background-color: #f2b900; }
+
+.highlight {
+  color: #444;
+  font-weight: bold; }
 
 footer {
-  background-color: #fff;
+  border-top: 1px #ff4b3e solid;
   display: flex;
   flex-flow: row;
+  grid-column: 2;
   grid-row-start: 3;
   justify-content: center; }
 
@@ -88,17 +98,23 @@ footer {
   height: 25px;
   margin: 1em; }
 
+.projects__header {
+  grid-column: span 3;
+  grid-row-start: 1;
+  text-align: center; }
+
 html,
 body {
-  color: #555;
+  color: #444;
   margin: 0; }
 
 body {
-  background-color: #fff;
+  background-color: #f2dfd7;
   min-height: 100vh; }
 
 .grid {
   display: grid;
+  grid-template-columns: 1fr 3.2fr 1fr;
   grid-template-rows: .2fr 2fr .1fr;
   height: 100vh;
   min-height: 100vh; }

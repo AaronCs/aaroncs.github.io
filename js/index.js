@@ -1,1 +1,1 @@
-// TODO: Make a cool menue on the left.
+// TODO: Make a cool fade in background like in kovenwei.com

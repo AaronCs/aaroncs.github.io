@@ -13,8 +13,7 @@
 .content__title {
   font-size: 5rem;
   font-weight: 700;
-  margin: 0 0 15px 0;
-  text-align: right; }
+  margin: 0 0 15px 0; }
 
 .content__about {
   text-align: right; }
@@ -27,7 +26,6 @@
   text-align: center; }
 
 .projects__container {
-  align-content: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -35,9 +33,17 @@
 
 .projects__item {
   border: 1px #fff solid;
-  margin: 10px 0;
+  margin: 0 auto;
   text-align: center;
-  width: 250px; }
+  width: 300px; }
+
+.projects-item__content {
+  margin: 10px; }
+
+.projects-item__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0; }
 
 html {
   background-color: #111;

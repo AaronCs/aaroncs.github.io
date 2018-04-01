@@ -3,6 +3,9 @@ var aboutArr = aboutEl.children;
 var projectsEl = document.getElementById('projects');
 var projectsTitleEl = document.getElementById('projects_title');
 var projectsItems = document.getElementById('projects_items');
+var arrowEl = document.getElementById('arrow');
+
+// TODO: Add 'onhover' for the more arrow.
 
 var aboutOptions = {
     targets: aboutArr,
@@ -31,11 +34,10 @@ var projectsItemsOptions = {
   easing: 'easeInQuart',
 }
 
-// console.log(projectsItems.children);
-
 var aboutAnimate = anime(aboutOptions);
 var projectsAnimate;
 var projectsItemsAnimate;
+var arrowAnimate;
 var projAnimateState = false;
 
 window.addEventListener('scroll', _.throttle(function(){
@@ -45,3 +47,25 @@ window.addEventListener('scroll', _.throttle(function(){
     projAnimateState = true;
   }
 }, 600));
+
+arrowEl.addEventListener('mouseover', _.throttle(function() {
+  if(arrowAnimate) {
+    arrowAnimate.reverse();
+    arrowAnimate.play();
+  }
+  else {
+    arrowAnimate = anime({
+      targets: arrowEl,
+      rotate: 90,
+      duration: 1000,
+      easing: 'easeInOutCubic',
+    })
+  }
+}, 1000));
+
+arrowEl.addEventListener('mouseout', _.throttle(function() {
+  if(arrowAnimate) {
+    arrowAnimate.reverse();
+    arrowAnimate.play();
+  }
+}, 1000));

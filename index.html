@@ -7,9 +7,11 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
     -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <script async src="js/anime.min.js"></script>
-    <script async src=js/index.js></script>
+    <script defer src="js/anime.min.js"></script>
+    <script defer src="js/lodash.min.js"></script>
+    <script defer src=js/index.js></script>
   </head>
   <body>
       <nav>
@@ -17,10 +19,13 @@
 </nav>
 
       <div class="content__container">
-    <section class="content__about">
+    <div class="about__container">
+    <section class="content__about" id="about">
         <section class="about__intro">
             <h1 class="about__title">Aaron Chan</h1>
-            Aspiring Software Developer
+            <p>
+                Aspiring Software Developer
+            </p>
         </section>
         <section class="about__desc">
             <p>
@@ -34,49 +39,41 @@
             </p>
         </section>
     </section>
-    <section class="content__projects">
-        <h2 class="projects__title">Projects</h2>
-        <div class="projects__container">
-            
-            <a class="projects__item">
-                <div class="projects-item__title">
-                    Recipe Web Scraper
-                </div>
-                <div class="projects-item__desc">
-                    Scrapes allrecipes.com for recipe data. Built with Python.
-                </div>
-            </a>
-            
-            <a class="projects__item">
-                <div class="projects-item__title">
-                    Wikipedia Viewer
-                </div>
-                <div class="projects-item__desc">
-                    Utilizes MediaWiki API to search for Wikipedia Entries. Allows for quick browsing and viewing of Wikipedia entries.
-                </div>
-            </a>
-            
-            <a class="projects__item">
-                <div class="projects-item__title">
-                    Project 3
-                </div>
-                <div class="projects-item__desc">
-                    test project 3
-                </div>
-            </a>
-            
-        </div>
-    </section>
-    <div class="content__animate">
-        <div class="box">
-            Test
-        </div>
-        <div class="box">
-            Test
-        </div>
-        <div class="box">
-            Test
-        </div>
+    </div>
+    <div class="projects__container">
+        <section class="content__projects" id="projects">
+            <h2 class="projects__title" id="projects_title">Projects</h2>
+            <div class="projects-item__container" id="projects_items">
+                
+                <a class="projects__item">
+                    <div class="projects-item__title">
+                        Recipe Web Scraper
+                    </div>
+                    <div class="projects-item__desc">
+                        Scrapes allrecipes.com for recipe data. Built with Python.
+                    </div>
+                </a>
+                
+                <a class="projects__item">
+                    <div class="projects-item__title">
+                        Wikipedia Viewer
+                    </div>
+                    <div class="projects-item__desc">
+                        Utilizes MediaWiki API to search for Wikipedia Entries. Allows for quick browsing and viewing of Wikipedia entries.
+                    </div>
+                </a>
+                
+                <a class="projects__item">
+                    <div class="projects-item__title">
+                        Project 3
+                    </div>
+                    <div class="projects-item__desc">
+                        test project 3
+                    </div>
+                </a>
+                
+            </div>
+        </section>
     </div>
     <footer>
         <div class="footer__desc">

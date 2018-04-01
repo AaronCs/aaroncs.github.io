@@ -1,18 +1,15 @@
-.content__container {
-  align-items: center;
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr; }
+.about__container {
+  background-color: white;
+  padding: 20rem 0; }
 
 .content__about {
-  grid-column: 2/2;
-  margin: 200px 15px; }
-
-.content__projects {
-  grid-column: 2/2;
-  margin: 200px 0; }
+  color: black;
+  margin: 0 auto;
+  width: 80%; }
+  .content__about section {
+    opacity: 0; }
 
 .about__intro {
-  border-bottom: 1px #6e7a86 solid;
   padding-bottom: 1rem;
   text-align: right; }
 
@@ -26,13 +23,47 @@
   .about__desc a:hover {
     text-decoration: underline; }
 
+/* Projects */
+.projects__container {
+  padding: 20rem 0; }
+
+.content__projects {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5rem 0; }
+
+.projects__title {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0 0 5rem 0;
+  opacity: 0;
+  padding: 0 0 15px 0; }
+
+.projects-item__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .projects-item__container .projects__item {
+    opacity: 0; }
+
+.projects__item {
+  text-align: center;
+  width: 250px;
+  height: 200px; }
+
+.projects-item__desc {
+  margin: 25px; }
+
+.projects-item__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0; }
+
 footer {
   background-color: #fff;
   color: #111;
   display: flex;
   flex-direction: row;
-  grid-column: 1/span 3;
-  margin-top: 100px;
   padding: 25px 0;
   justify-content: center; }
 
@@ -58,32 +89,6 @@ footer {
   text-align: center;
   width: 100px; }
 
-.projects__title {
-  border-bottom: 1px #6e7a86 solid;
-  font-size: 5rem;
-  font-weight: 700;
-  margin: 0 0 25px 0;
-  padding: 0 0 15px 0; }
-
-.projects__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
-
-.projects__item {
-  margin: 0 auto;
-  text-align: center;
-  width: 250px;
-  height: 200px; }
-
-.projects-item__desc {
-  margin: 25px; }
-
-.projects-item__title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 10px 0; }
-
 html {
   background-color: #111;
   font-size: 16px; }
@@ -101,5 +106,4 @@ a {
     cursor: pointer; }
 
 .bold {
-  color: #f56969;
   font-weight: bold; }
